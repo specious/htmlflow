@@ -1,24 +1,6 @@
 const { Parser } = require('htmlparser2')
 
-const special = {
-  tags: {
-    singleton: [
-      'br',
-      'hr',
-      'img',
-      'input',
-      'meta'
-    ]
-  },
-  attrs: {
-    boolean: [
-      'async',
-      'checked',
-      'hidden',
-      'selected'
-    ]
-  }
-}
+const special = require('./lib/special.js')
 
 async function htmlformat( content, opts ) {
   let output = []

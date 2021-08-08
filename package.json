@@ -1,0 +1,15 @@
+{
+  "name": "html-format",
+  "version": "0.0.1",
+  "description": "Format HTML according to certain preferences",
+  "author": "Ildar Sagdejev",
+  "homepage": "https://github.com/specious/html-formatter",
+  "license": "ISC",
+  "repository": "github:specious/html-formatter",
+  "bugs": {
+    "url": "https://github.com/specious/html-formatter/issues"
+  },
+  "dependencies": {
+    "htmlparser2": "^6.1.0"
+  }
+}

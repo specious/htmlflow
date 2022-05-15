@@ -2,7 +2,7 @@ const { Parser } = require('htmlparser2')
 
 const { tags, attrs } = require('./lib/kinds.js')
 
-async function htmlformat( content, opts ) {
+async function htmlFlow( content, opts ) {
   opts = Object.assign( {
     indent: 2,
     tabs: false,
@@ -99,7 +99,7 @@ async function htmlformat( content, opts ) {
           if (!unformatted) {
             let empty = false
 
-            for (let i = lines.length - 1; i > -1; i-- ) {
+            for (let i = lines.length - 1; i > -1; i--) {
               let line = lines[i].trim()
               lines[i] = line
 
@@ -128,8 +128,8 @@ async function htmlformat( content, opts ) {
         }
       },
       oncomment( value ) {
-        if( opts.comments )
-          put('<!--' + value + '-->')
+        if (opts.comments)
+          put( '<!--' + value + '-->' )
       },
       onend() {
         resolve( output.join('') )
@@ -158,4 +158,4 @@ function writeAttr( attr, val ) {
   return (val === '' && attrs.boolean.includes( attr )) ? attr : attr + `="${val}"`
 }
 
-module.exports = htmlformat
+module.exports = htmlFlow

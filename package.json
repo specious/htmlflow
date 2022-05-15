@@ -1,15 +1,15 @@
 {
-  "name": "html-format",
-  "version": "0.0.1",
+  "name": "@specious/htmlflow",
+  "version": "1.0.0",
   "description": "Format HTML according to certain preferences",
   "author": "Ildar Sagdejev",
-  "homepage": "https://github.com/specious/html-formatter",
+  "homepage": "https://github.com/specious/htmlflow",
   "license": "ISC",
-  "repository": "github:specious/html-formatter",
+  "repository": "github:specious/htmlflow",
   "bugs": {
-    "url": "https://github.com/specious/html-formatter/issues"
+    "url": "https://github.com/specious/htmlflow/issues"
   },
   "dependencies": {
-    "htmlparser2": "^6.1.0"
+    "htmlparser2": "^8.0.1"
   }
 }

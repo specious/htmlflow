@@ -1,7 +1,7 @@
 {
   "name": "@specious/htmlflow",
-  "version": "1.0.0",
-  "description": "Format HTML according to certain preferences",
+  "version": "1.1.0",
+  "description": "Lightweight and fast html formatter for already valid HTML markup",
   "author": "Ildar Sagdejev",
   "homepage": "https://github.com/specious/htmlflow",
   "license": "ISC",
